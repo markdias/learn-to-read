@@ -1,0 +1,12 @@
+// Local Configuration Template
+// 1. Copy this file and rename it to: config.local.js
+// 2. Add your ElevenLabs API key below
+// 3. config.local.js is git-ignored and won't be committed
+
+// Get your API key from: https://elevenlabs.io/
+window.ELEVENLABS_API_KEY = 'YOUR_API_KEY_HERE';
+
+// Optional: Customize the voice
+// Browse voices at: https://elevenlabs.io/voice-library
+// Or list available voices with your API key at: https://api.elevenlabs.io/v1/voices
+window.ELEVENLABS_VOICE_ID = 'EXAVITQu4vr4xnSDxMaL'; // Default kid-friendly voice

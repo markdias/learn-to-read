@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Read! 📚</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Learn to Read! 🌟</h1>
+            <div class="api-status" id="apiStatus"></div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="letters">🔤 Letters</button>
+            <button class="tab-btn" data-tab="words">📝 Words</button>
+            <button class="tab-btn" data-tab="stories">📖 Stories</button>
+        </nav>
+
+        <!-- Letters Section -->
+        <section id="letters" class="tab-content active">
+            <h2>Click a letter to hear it!</h2>
+            <div class="alphabet-grid" id="alphabetGrid"></div>
+        </section>
+
+        <!-- Words Section -->
+        <section id="words" class="tab-content">
+            <h2>Click a word to hear it!</h2>
+            <div class="words-container">
+                <div class="word-category">
+                    <h3>🐱 Animals</h3>
+                    <div class="word-grid" id="animalWords"></div>
+                </div>
+                <div class="word-category">
+                    <h3>🎨 Colors</h3>
+                    <div class="word-grid" id="colorWords"></div>
+                </div>
+                <div class="word-category">
+                    <h3>👨‍👩‍👧‍👦 Family</h3>
+                    <div class="word-grid" id="familyWords"></div>
+                </div>
+                <div class="word-category">
+                    <h3>📚 Simple Words</h3>
+                    <div class="word-grid" id="simpleWords"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section id="stories" class="tab-content">
+            <h2>Let's read together! 📚</h2>
+            <div class="story-selector">
+                <button class="story-btn" data-story="0">The Cat</button>
+                <button class="story-btn" data-story="1">My Family</button>
+                <button class="story-btn" data-story="2">At the Park</button>
+            </div>
+            <div class="story-display" id="storyDisplay">
+                <div class="story-text" id="storyText"></div>
+                <div class="story-controls">
+                    <button class="control-btn" id="playStory">▶️ Read Story</button>
+                    <button class="control-btn" id="pauseStory">⏸️ Pause</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading Indicator -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading voice...</p>
+        </div>
+
+        <!-- Encouragement Messages -->
+        <div class="encouragement" id="encouragement"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="config.local.js" onerror="console.log('No local config found - using defaults')"></script>
+    <script src="app.js"></script>
+</body>
+</html>
