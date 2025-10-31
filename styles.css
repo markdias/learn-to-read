@@ -136,7 +136,6 @@ h3 {
     cursor: pointer;
     transition: all 0.3s;
     font-family: inherit;
-    text-transform: uppercase;
 }
 
 .letter-btn:hover {

@@ -117,7 +117,7 @@ class ReadingApp {
     }
 
     setupAlphabet() {
-        const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+        const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
         const grid = document.getElementById('alphabetGrid');
 
         alphabet.forEach(letter => {
